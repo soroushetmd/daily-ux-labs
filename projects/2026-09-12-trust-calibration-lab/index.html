@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A small HCI experiment for practising calibrated trust in AI recommendations.">
+  <title>Trust Calibration Lab</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="shell">
+    <header class="masthead">
+      <a class="brand" href="./" aria-label="Trust Calibration Lab home">
+        <span class="brand-mark" aria-hidden="true"></span>
+        Trust Calibration Lab
+      </a>
+      <span class="lab-tag">HCI Experiment 01</span>
+    </header>
+
+    <section class="intro" id="intro">
+      <p class="eyebrow">Human–AI interaction</p>
+      <h1>When should you trust an AI recommendation?</h1>
+      <p class="lede">Review five realistic recommendations. Choose whether to accept, verify, or reject each one, then rate how confident you are in your decision.</p>
+      <div class="principles" aria-label="Experiment details">
+        <span>5 scenarios</span><span>~3 minutes</span><span>No data saved</span>
+      </div>
+      <button class="primary" id="start-button" type="button">Start the experiment <span aria-hidden="true">→</span></button>
+    </section>
+
+    <section class="experiment" id="experiment" hidden aria-labelledby="scenario-title">
+      <div class="progress-row">
+        <p id="progress-label">Scenario 1 of 5</p>
+        <div class="progress-track" role="progressbar" aria-labelledby="progress-label" aria-valuemin="1" aria-valuemax="5" aria-valuenow="1">
+          <span id="progress-fill"></span>
+        </div>
+      </div>
+
+      <article class="scenario-card">
+        <div class="signal-grid" id="signal-grid"></div>
+        <p class="scenario-context" id="scenario-context"></p>
+        <h2 id="scenario-title"></h2>
+        <p id="scenario-detail"></p>
+      </article>
+
+      <form id="decision-form">
+        <fieldset>
+          <legend>What would you do?</legend>
+          <div class="decision-grid">
+            <label class="decision-option">
+              <input type="radio" name="decision" value="accept" required>
+              <span><strong>Accept</strong><small>Use the recommendation now</small></span>
+            </label>
+            <label class="decision-option">
+              <input type="radio" name="decision" value="verify">
+              <span><strong>Verify</strong><small>Check evidence before acting</small></span>
+            </label>
+            <label class="decision-option">
+              <input type="radio" name="decision" value="reject">
+              <span><strong>Reject</strong><small>Do not use this recommendation</small></span>
+            </label>
+          </div>
+        </fieldset>
+
+        <div class="confidence-block">
+          <label for="confidence"><strong>How confident are you?</strong> <output id="confidence-output" for="confidence">70%</output></label>
+          <input id="confidence" type="range" min="50" max="100" value="70" step="5">
+          <div class="range-labels" aria-hidden="true"><span>Unsure</span><span>Very sure</span></div>
+        </div>
+
+        <p class="form-error" id="form-error" role="alert"></p>
+        <button class="primary" type="submit">Lock decision <span aria-hidden="true">→</span></button>
+      </form>
+
+      <aside class="feedback" id="feedback" hidden aria-live="polite">
+        <p class="feedback-label" id="feedback-label"></p>
+        <h3 id="feedback-title"></h3>
+        <p id="feedback-copy"></p>
+        <button class="primary" id="next-button" type="button">Next scenario <span aria-hidden="true">→</span></button>
+      </aside>
+    </section>
+
+    <section class="results" id="results" hidden aria-labelledby="results-title">
+      <p class="eyebrow">Your calibration snapshot</p>
+      <h2 id="results-title"></h2>
+      <p class="lede" id="results-summary"></p>
+      <div class="metric-grid">
+        <article><span class="metric" id="accuracy-score">0%</span><span>Decision accuracy</span></article>
+        <article><span class="metric" id="confidence-score">0%</span><span>Average confidence</span></article>
+        <article><span class="metric" id="gap-score">0</span><span>Calibration gap</span></article>
+      </div>
+      <div class="insight-card">
+        <h3>Design takeaway</h3>
+        <p id="design-takeaway"></p>
+      </div>
+      <button class="secondary" id="restart-button" type="button">Run it again</button>
+    </section>
+
+    <footer>
+      <p>Designed and built by <strong>Soroush Etemadfar</strong></p>
+      <p>Daily UX Lab · 12 September 2026</p>
+    </footer>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>

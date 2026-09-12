@@ -1,2 +1,20 @@
-# daily-ux-labs
-Small UX/HCI, accessibility, data-visualization, game UX, and human–AI interaction experiments by Soroush Etemadfar.
+# Daily UX Labs
+
+Small, shippable experiments at the intersection of **UX/HCI, accessibility, data visualization, game UX, and human–AI interaction**.
+
+Each project starts with a focused user problem and includes a working prototype, design rationale, accessibility considerations, and a short reflection.
+
+## Projects
+
+| Date | Project | Focus | Stack |
+| --- | --- | --- | --- |
+| 2026-09-12 | [Trust Calibration Lab](projects/2026-09-12-trust-calibration-lab/) | Human–AI interaction · calibrated reliance | HTML · CSS · JavaScript |
+
+## Principles
+
+- Small enough to ship, substantial enough to demonstrate a decision.
+- Clear problem framing before visual polish.
+- Accessible, responsive, dependency-light prototypes.
+- Honest documentation of constraints and learning.
+
+Created by **Soroush Etemadfar**, UX/Product Designer and Software Engineering graduate based in Canada.
