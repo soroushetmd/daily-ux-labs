@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A public-service UX prototype that compares transit routes using accessibility needs, not travel time alone.">
+  <title>Inclusive Transit Planner</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="page">
+    <header class="topbar">
+      <a class="brand" href="./"><span aria-hidden="true">↗</span> Inclusive Transit</a>
+      <span class="demo-label">Demo routes · Not live data</span>
+    </header>
+
+    <section class="hero" aria-labelledby="page-title">
+      <p class="eyebrow">Public-service UX · Accessibility</p>
+      <h1 id="page-title">The fastest route isn't always the easiest.</h1>
+      <p class="intro">Set what matters for this trip. The planner will compare three sample routes and explain every match or trade-off.</p>
+    </section>
+
+    <section class="planner" aria-label="Accessible route comparison">
+      <aside class="needs-panel">
+        <div class="panel-heading">
+          <p class="step">01</p>
+          <div><h2>Your trip needs</h2><p>Select any that matter today.</p></div>
+        </div>
+
+        <fieldset id="needs-form">
+          <legend class="sr-only">Trip accessibility preferences</legend>
+          <label class="need-option">
+            <input type="checkbox" value="stepFree">
+            <span><strong>Step-free only</strong><small>Avoid stairs and inaccessible platforms</small></span>
+          </label>
+          <label class="need-option">
+            <input type="checkbox" value="lowWalking">
+            <span><strong>Less walking</strong><small>Keep walking under 450 metres</small></span>
+          </label>
+          <label class="need-option">
+            <input type="checkbox" value="elevator">
+            <span><strong>Working elevator</strong><small>Require confirmed elevator availability</small></span>
+          </label>
+          <label class="need-option">
+            <input type="checkbox" value="lowSensory">
+            <span><strong>Lower sensory load</strong><small>Prefer fewer transfers and quieter stops</small></span>
+          </label>
+        </fieldset>
+
+        <button id="reset-button" class="text-button" type="button">Reset preferences</button>
+      </aside>
+
+      <section class="results-panel" aria-labelledby="routes-title">
+        <div class="panel-heading">
+          <p class="step">02</p>
+          <div><h2 id="routes-title">Route comparison</h2><p id="result-summary">Showing all sample routes.</p></div>
+        </div>
+        <div id="route-list" class="route-list"></div>
+        <p id="live-update" class="sr-only" aria-live="polite"></p>
+      </section>
+    </section>
+
+    <section class="design-note">
+      <p class="eyebrow">Design principle</p>
+      <h2>Make constraints visible before asking people to commit.</h2>
+      <p>Travel time is only one dimension of a usable route. This concept keeps accessibility needs visible, explains trade-offs in plain language, and never hides routes that fail a preference.</p>
+    </section>
+
+    <footer>
+      <span>Designed and built by <strong>Soroush Etemadfar</strong></span>
+      <span>Daily UX Lab · 13 September 2026</span>
+    </footer>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
