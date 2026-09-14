@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="An accessible research-synthesis prototype for comparing usability findings by frequency, task impact, and evidence confidence.">
+  <title>Evidence Priority Map</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="shell">
+    <header class="masthead">
+      <a class="brand" href="./" aria-label="Evidence Priority Map home">
+        <span aria-hidden="true">EP</span> Evidence Priority Map
+      </a>
+      <p>Daily UX Lab · Synthetic data</p>
+    </header>
+
+    <section class="hero" aria-labelledby="page-title">
+      <p class="kicker">Information visualization · Research synthesis</p>
+      <h1 id="page-title">Prioritize the evidence,<br>not the loudest opinion.</h1>
+      <p class="lede">Compare usability findings across frequency, task impact, and confidence—without hiding uncertainty inside a single score.</p>
+    </section>
+
+    <section class="workspace" aria-labelledby="workspace-title">
+      <div class="workspace-head">
+        <div>
+          <p class="section-number">01 / Explore</p>
+          <h2 id="workspace-title">Checkout study snapshot</h2>
+          <p id="result-count">Showing 6 synthetic findings.</p>
+        </div>
+        <div class="view-switch" aria-label="Choose data view">
+          <button class="view-button active" type="button" data-view="chart" aria-pressed="true">Map</button>
+          <button class="view-button" type="button" data-view="table" aria-pressed="false">Table</button>
+        </div>
+      </div>
+
+      <div class="filters" aria-label="Map controls">
+        <label>
+          <span>Journey stage</span>
+          <select id="stage-filter">
+            <option value="all">All stages</option>
+            <option value="Discover">Discover</option>
+            <option value="Decide">Decide</option>
+            <option value="Checkout">Checkout</option>
+          </select>
+        </label>
+        <label class="toggle">
+          <input id="confidence-toggle" type="checkbox" checked>
+          <span aria-hidden="true"></span>
+          Show confidence labels
+        </label>
+      </div>
+
+      <div id="chart-view" class="chart-view">
+        <div class="chart-wrap">
+          <svg id="priority-map" viewBox="0 0 760 470" role="img" aria-labelledby="chart-title chart-desc">
+            <title id="chart-title">Usability findings by observed frequency and task impact</title>
+            <desc id="chart-desc">Six synthetic findings. Move through focusable points with the Tab key and press Enter to inspect one.</desc>
+          </svg>
+        </div>
+        <aside id="detail-panel" class="detail-panel" aria-labelledby="detail-title">
+          <p class="section-number">Selected finding</p>
+          <div id="detail-content">
+            <h3 id="detail-title">Choose a point</h3>
+            <p>Click or focus a finding to inspect its evidence, stage, and suggested next step.</p>
+          </div>
+        </aside>
+      </div>
+
+      <div id="table-view" class="table-view" hidden>
+        <div class="table-scroll">
+          <table>
+            <caption>Accessible alternative to the priority map</caption>
+            <thead><tr><th scope="col">Finding</th><th scope="col">Stage</th><th scope="col">Observed</th><th scope="col">Impact</th><th scope="col">Confidence</th><th scope="col">Next step</th></tr></thead>
+            <tbody id="findings-table"></tbody>
+          </table>
+        </div>
+      </div>
+      <p id="live-update" class="sr-only" aria-live="polite"></p>
+    </section>
+
+    <section class="principle" aria-labelledby="principle-title">
+      <p class="section-number">02 / Principle</p>
+      <h2 id="principle-title">A map starts a conversation.<br>It does not make the decision.</h2>
+      <p>Frequency tells us how often something appeared. Impact tells us what it interrupted. Confidence tells us how much evidence supports the observation. Keeping all three visible makes prioritisation more accountable.</p>
+    </section>
+
+    <footer>
+      <span>Designed and built by <strong>Soroush Etemadfar</strong></span>
+      <span>14 September 2026</span>
+    </footer>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
