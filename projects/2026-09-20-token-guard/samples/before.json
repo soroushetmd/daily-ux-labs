@@ -1,0 +1,23 @@
+{
+  "color": {
+    "surface": {
+      "base": {"value": "#FFFFFF", "type": "color"},
+      "brand": {"value": "#3E35B1", "type": "color"}
+    },
+    "text": {
+      "primary": {"value": "#24242A", "type": "color"},
+      "muted": {"value": "#62626A", "type": "color"},
+      "onBrand": {"value": "#FFFFFF", "type": "color"}
+    }
+  },
+  "spacing": {
+    "md": {"value": 16, "type": "dimension"},
+    "lg": {"value": 24, "type": "dimension"}
+  },
+  "radius": {
+    "card": {"value": 12, "type": "dimension"}
+  },
+  "meta": {
+    "contrastPairs": []
+  }
+}

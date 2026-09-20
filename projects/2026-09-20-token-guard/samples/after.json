@@ -1,0 +1,39 @@
+{
+  "color": {
+    "surface": {
+      "base": {"value": "#FFFFFF", "type": "color"},
+      "brand": {"value": "#5147C7", "type": "color"}
+    },
+    "text": {
+      "primary": {"value": "#777777", "type": "color"},
+      "onBrand": {"value": "#FFFFFF", "type": "color"},
+      "success": {"value": "#176B45", "type": "color"}
+    },
+    "focus": {
+      "ring": {"value": "#F4A621", "type": "color"}
+    }
+  },
+  "spacing": {
+    "md": {"value": 16, "type": "dimension"},
+    "lg": {"value": "1.5rem", "type": "dimension"}
+  },
+  "radius": {
+    "card": {"value": 16, "type": "dimension"}
+  },
+  "meta": {
+    "contrastPairs": [
+      {
+        "label": "Body text",
+        "foreground": "color.text.primary",
+        "background": "color.surface.base",
+        "largeText": false
+      },
+      {
+        "label": "Brand button label",
+        "foreground": "color.text.onBrand",
+        "background": "color.surface.brand",
+        "largeText": false
+      }
+    ]
+  }
+}
