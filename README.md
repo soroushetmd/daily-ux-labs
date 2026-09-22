@@ -8,6 +8,7 @@ Each project starts with a focused user problem and includes a working prototype
 
 | Date | Project | Focus | Stack |
 | --- | --- | --- | --- |
+| 2026-09-22 | [Fair Play Difficulty Lab](projects/2026-09-22-fair-play-difficulty-lab/) | Game UX · adaptive difficulty | HTML · CSS · JavaScript · Node tests |
 | 2026-09-20 | [Token Guard](projects/2026-09-20-token-guard/) | Design systems · accessibility tooling | Python · HTML · JSON |
 | 2026-09-14 | [Evidence Priority Map](projects/2026-09-14-evidence-priority-map/) | Information visualization · research synthesis | HTML · CSS · JavaScript · SVG |
 | 2026-09-13 | [Inclusive Transit Planner](projects/2026-09-13-inclusive-transit-planner/) | Public-service UX · accessibility | HTML · CSS · JavaScript |

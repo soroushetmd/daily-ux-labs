@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A transparent adaptive-difficulty Game UX prototype with player-controlled assistance.">
+  <title>Fair Play Difficulty Lab</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="shell">
+    <header class="masthead">
+      <a href="./" class="brand"><span aria-hidden="true">FP</span> Fair Play Lab</a>
+      <p>Game UX experiment · No tracking</p>
+    </header>
+
+    <section class="hero" aria-labelledby="page-title">
+      <p class="eyebrow">Game UX · Adaptive difficulty</p>
+      <h1 id="page-title">Challenge should adapt.<br>Trust should not.</h1>
+      <p class="lede">A ten-round microgame that explains every pace change and keeps assistance under player control.</p>
+    </section>
+
+    <section class="lab" aria-labelledby="lab-title">
+      <div class="lab-head">
+        <div><p class="step">01 / Play</p><h2 id="lab-title">Signal Grid</h2><p id="status-copy">Select Start to begin.</p></div>
+        <button id="start-button" class="primary" type="button">Start session</button>
+      </div>
+
+      <div class="game-layout">
+        <section class="play-area" aria-label="Game board">
+          <div class="hud" aria-label="Session status">
+            <div><span>Round</span><strong id="round-value">0 / 10</strong></div>
+            <div><span>Score</span><strong id="score-value">0</strong></div>
+            <div><span>Response window</span><strong id="pace-value">1.60 s</strong></div>
+          </div>
+          <div id="grid" class="grid" role="group" aria-label="Five by five target grid"></div>
+          <p class="keyboard-note">Keyboard: Arrow keys move the cursor · Space selects</p>
+        </section>
+
+        <aside class="control-panel" aria-labelledby="control-title">
+          <p class="step">02 / Control</p>
+          <h2 id="control-title">Player controls</h2>
+          <label class="control-row"><span><strong>Lock current pace</strong><small>Stop automatic adjustments</small></span><input id="pace-lock" type="checkbox"></label>
+          <label class="control-row"><span><strong>Larger target</strong><small>Increase the target hit area</small></span><input id="large-target" type="checkbox"></label>
+          <label class="control-row"><span><strong>Extra response time</strong><small>Add 600 ms to every round</small></span><input id="extra-time" type="checkbox"></label>
+          <div class="explanation" aria-labelledby="why-title"><p class="step">Latest adjustment</p><h3 id="why-title">No change yet</h3><p id="why-copy">The system will explain its decision after each round.</p></div>
+        </aside>
+      </div>
+      <p id="live-update" class="sr-only" aria-live="assertive"></p>
+    </section>
+
+    <section class="principle">
+      <p class="step">Design principle</p>
+      <h2>Assistance is a setting,<br>not a penalty.</h2>
+      <p>Players can change target size, add time, or freeze adaptation without losing points. The design treats access needs as normal play preferences and makes system behaviour contestable.</p>
+    </section>
+
+    <footer><span>Designed and built by <strong>Soroush Etemadfar</strong></span><span>22 September 2026</span></footer>
+  </main>
+  <script type="module" src="game.js"></script>
+</body>
+</html>
