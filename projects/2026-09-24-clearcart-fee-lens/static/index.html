@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A marketplace checkout prototype that explains buyer fees and seller payout before commitment.">
+  <title>ClearCart Fee Lens</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="shell">
+    <header class="masthead"><a class="brand" href="/"><span aria-hidden="true">CC</span> ClearCart</a><p>Synthetic marketplace · Demo rules</p></header>
+    <section class="hero"><p class="eyebrow">Marketplace UX · Fee transparency</p><h1>Know the total.<br>See both sides.</h1><p>Explore a checkout that explains what a buyer pays and what a seller receives before anyone commits.</p></section>
+
+    <section class="checkout" aria-labelledby="checkout-title">
+      <div class="checkout-head"><div><p class="step">01 / Configure</p><h2 id="checkout-title">Build a sample order</h2></div><span class="demo">Demo pricing only</span></div>
+      <div class="checkout-grid">
+        <form id="quote-form" class="controls">
+          <fieldset><legend>Choose a listing</legend><div id="listings" class="listings" aria-live="polite"></div></fieldset>
+          <div class="fields">
+            <label><span>Quantity</span><select id="quantity"><option>1</option><option>2</option><option>3</option><option>4</option></select></label>
+            <fieldset><legend>Fulfilment</legend><label class="radio"><input type="radio" name="fulfilment" value="pickup" checked><span>Pickup <small>No delivery charge</small></span></label><label class="radio"><input type="radio" name="fulfilment" value="delivery"><span>Delivery <small>Demo fee applies</small></span></label></fieldset>
+            <label><span>Tip to seller</span><select id="tip"><option value="0">No tip</option><option value="10">10%</option><option value="15">15%</option><option value="20">20%</option></select></label>
+          </div>
+        </form>
+
+        <section class="receipt" aria-labelledby="receipt-title">
+          <p class="step">02 / Understand</p><h2 id="receipt-title">Transparent quote</h2><p id="quote-status">Loading sample listings…</p>
+          <div class="receipt-columns">
+            <div><h3>You pay</h3><dl id="buyer-lines"></dl><div class="total"><span>Total</span><strong id="buyer-total">—</strong></div></div>
+            <div class="seller"><h3>Seller receives</h3><dl id="seller-lines"></dl><div class="total"><span>Payout</span><strong id="seller-total">—</strong></div></div>
+          </div>
+          <details><summary>How this demo calculates fees</summary><ul><li>Buyer service fee: 7% of item subtotal.</li><li>Seller fee: 10% of item subtotal.</li><li>Demo tax: 13% of subtotal, delivery, and buyer fee.</li><li>The full tip is added to the seller payout.</li><li>These rules are fictional and not financial guidance.</li></ul></details>
+        </section>
+      </div>
+      <p id="live-update" class="sr-only" aria-live="polite"></p>
+    </section>
+
+    <section class="principle"><p class="step">Design principle</p><h2>Disclosure belongs before commitment.</h2><p>A fee is not transparent because it exists somewhere in a help centre. People need the amount, recipient, and reason at the moment it affects a decision.</p></section>
+    <footer><span>Designed and built by <strong>Soroush Etemadfar</strong></span><span>24 September 2026</span></footer>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
