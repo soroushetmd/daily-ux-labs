@@ -1,0 +1,13 @@
+session_id,step,status,duration_seconds
+s01,Account details,completed,42
+s02,Account details,completed,35
+s03,Account details,completed,51
+s04,Account details,abandoned,68
+s05,Address,completed,54
+s06,Address,abandoned,105
+s07,Address,abandoned,88
+s08,Document upload,completed,71
+s09,Document upload,completed,64
+s10,Document upload,abandoned,140
+s11,Review,completed,24
+s12,Review,completed,31
