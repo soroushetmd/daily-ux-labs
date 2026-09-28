@@ -8,6 +8,7 @@ Each project starts with a focused user problem and includes a working prototype
 
 | Date | Project | Focus | Stack |
 | --- | --- | --- | --- |
+| 2026-09-28 | [AI Copy Review Queue](projects/2026-09-28-ai-copy-review-queue/) | Human–AI interaction · accountable review | HTML · CSS · JavaScript · Node tests |
 | 2026-09-26 | [Form Friction Profiler](projects/2026-09-26-form-friction-profiler/) | UX analytics · privacy-conscious reporting | C++17 · HTML · CSV |
 | 2026-09-24 | [ClearCart Fee Lens](projects/2026-09-24-clearcart-fee-lens/) | Marketplace UX · fee transparency | Python · SQLite · JavaScript |
 | 2026-09-22 | [Fair Play Difficulty Lab](projects/2026-09-22-fair-play-difficulty-lab/) | Game UX · adaptive difficulty | HTML · CSS · JavaScript · Node tests |

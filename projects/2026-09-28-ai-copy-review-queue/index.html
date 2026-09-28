@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AI Copy Review Queue</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <a class="skip" href="#review">Skip to review</a>
+    <p class="eyebrow">Human–AI interaction prototype</p>
+    <h1>AI Copy Review Queue</h1>
+    <p class="intro">Review synthetic AI-generated interface copy with visible risk rules and a traceable human decision.</p>
+  </header>
+  <main id="review">
+    <section class="status" aria-labelledby="progress">
+      <div><strong id="progress">0 of 4 reviewed</strong><p id="summary">0 approved · 0 edited · 0 rejected</p></div>
+      <progress id="progress-bar" max="4" value="0">0 of 4</progress>
+    </section>
+    <article class="workspace">
+      <div class="brief">
+        <p class="label">Surface</p><h2 id="surface"></h2>
+        <p class="label">User need</p><p id="context"></p>
+        <aside class="principle"><strong>Review principle</strong><p>Flags are prompts for judgment, not automatic verdicts.</p></aside>
+      </div>
+      <form id="review-form">
+        <label for="copy">Proposed interface copy</label>
+        <textarea id="copy" rows="5"></textarea>
+        <section id="risk" class="risk" aria-live="polite">
+          <h3 id="risk-level">Risk</h3><ul id="flags"></ul>
+        </section>
+        <label for="note">Reviewer note <span>(required when rejecting)</span></label>
+        <textarea id="note" rows="3" placeholder="Explain the decision for the next teammate."></textarea>
+        <div class="actions">
+          <button name="action" value="reject" class="secondary">Reject</button>
+          <button name="action" value="edit" class="secondary">Save edit</button>
+          <button name="action" value="approve">Approve</button>
+        </div>
+      </form>
+      <section id="complete" hidden>
+        <h2>Review complete</h2>
+        <p>The structured log preserves the original copy, final copy, decision, note, and detected flags.</p>
+        <button id="export">Export review log</button>
+      </section>
+    </article>
+    <p id="message" class="message" role="status" aria-live="polite"></p>
+  </main>
+  <footer>Designed and built by <strong>Soroush Etemadfar</strong>. All examples are synthetic.</footer>
+  <script type="module" src="app.mjs"></script>
+</body>
+</html>
