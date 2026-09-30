@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Service Access Navigator</title><link rel="stylesheet" href="styles.css"></head>
+<body>
+<a class="skip" href="#questions">Skip to questions</a>
+<header><p class="eyebrow">Public-service UX prototype</p><h1>Choose a service channel that fits your needs.</h1><p>Compare online, phone, and in-person options using a few practical preferences. No personal data is collected or stored.</p></header>
+<main>
+  <form id="questions">
+    <fieldset><legend>What matters for this task?</legend>
+      <label><input type="checkbox" name="urgent"> I need to complete this soon</label>
+      <label><input type="checkbox" name="mobility"> Travelling to an office is difficult</label>
+      <label><input type="checkbox" name="digital"> I am comfortable completing forms online</label>
+      <label><input type="checkbox" name="language"> I may need language support</label>
+    </fieldset>
+    <button type="submit">Compare my options</button>
+  </form>
+  <section id="results" aria-labelledby="results-title" hidden>
+    <div class="section-head"><div><p class="eyebrow">Transparent recommendation</p><h2 id="results-title">All service options</h2></div><p>Ranked for your selected needs—not eligibility.</p></div>
+    <div id="cards" class="cards"></div>
+    <p class="notice"><strong>Prototype notice:</strong> availability and wait times are fictional. Confirm details with the real service provider.</p>
+  </section>
+  <p id="status" role="status" aria-live="polite"></p>
+</main>
+<footer>Designed and built by <strong>Soroush Etemadfar</strong>.</footer>
+<script src="app.js"></script>
+</body></html>
