@@ -1,0 +1,66 @@
+[
+  {
+    "severity": "high",
+    "rule": "document-language",
+    "line": 2,
+    "element": "<html>",
+    "message": "The page language is not declared.",
+    "suggestion": "Add a valid lang attribute to <html>."
+  },
+  {
+    "severity": "high",
+    "rule": "image-alt",
+    "line": 6,
+    "element": "<img>",
+    "message": "Image has no alt attribute.",
+    "suggestion": "Add meaningful alt text or alt=\"\" when decorative."
+  },
+  {
+    "severity": "high",
+    "rule": "form-label",
+    "line": 8,
+    "element": "<input id=\"name\">",
+    "message": "Form control has no programmatic label.",
+    "suggestion": "Associate a <label> using for/id or provide an accessible name."
+  },
+  {
+    "severity": "high",
+    "rule": "button-name",
+    "line": 9,
+    "element": "<button>",
+    "message": "Button has no accessible name.",
+    "suggestion": "Add visible text or an aria-label."
+  },
+  {
+    "severity": "medium",
+    "rule": "heading-order",
+    "line": 10,
+    "element": "<h3>",
+    "message": "Heading level jumps from h1 to h3.",
+    "suggestion": "Use sequential heading levels to communicate structure."
+  },
+  {
+    "severity": "medium",
+    "rule": "positive-tabindex",
+    "line": 11,
+    "element": "<a>",
+    "message": "Positive tabindex changes the natural keyboard order.",
+    "suggestion": "Use DOM order and tabindex=\"0\" only when necessary."
+  },
+  {
+    "severity": "medium",
+    "rule": "duplicate-id",
+    "line": 12,
+    "element": "<p id=\"next\">",
+    "message": "Duplicate id \"next\".",
+    "suggestion": "Use a unique id for every element."
+  },
+  {
+    "severity": "medium",
+    "rule": "duplicate-id",
+    "line": 13,
+    "element": "<p id=\"next\">",
+    "message": "Duplicate id \"next\".",
+    "suggestion": "Use a unique id for every element."
+  }
+]
