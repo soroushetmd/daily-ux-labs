@@ -8,6 +8,7 @@ Each project starts with a focused user problem and includes a working prototype
 
 | Date | Project | Focus | Stack |
 | --- | --- | --- | --- |
+| 2026-10-04 | [Handoff Coverage Matrix](projects/2026-10-04-handoff-coverage-matrix/) | Design–engineering handoff · state coverage | Python · SQLite · SQL · HTML |
 | 2026-10-02 | [A11y Snapshot](projects/2026-10-02-a11y-snapshot/) | Accessibility engineering · HTML auditing | Python · HTML · JSON |
 | 2026-09-30 | [Service Access Navigator](projects/2026-09-30-service-access-navigator/) | Public-service UX · explainable recommendations | Node.js · HTML · CSS · JavaScript |
 | 2026-09-28 | [AI Copy Review Queue](projects/2026-09-28-ai-copy-review-queue/) | Human–AI interaction · accountable review | HTML · CSS · JavaScript · Node tests |
