@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Compare synthetic subscription exit paths and identify UX friction.">
+  <title>Exit Path Mapper — Soroush Etemadfar</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#workspace">Skip to comparison</a>
+  <header class="hero">
+    <p class="eyebrow">Daily UX Lab · Subscription UX</p>
+    <h1>Exit Path Mapper</h1>
+    <p class="lede">Make cancellation friction visible before it ships. Compare synthetic paths, inspect every step, and export a compact review snapshot.</p>
+    <p class="notice"><strong>Prototype:</strong> All paths are fictional. Results are a design-review aid, not user research or legal advice.</p>
+  </header>
+
+  <main id="workspace">
+    <section class="controls" aria-labelledby="choose-heading">
+      <div>
+        <p class="eyebrow">1 · Choose paths</p>
+        <h2 id="choose-heading">What should the team compare?</h2>
+      </div>
+      <fieldset id="path-options">
+        <legend class="sr-only">Subscription exit paths</legend>
+      </fieldset>
+      <button id="export-button" type="button">Copy review snapshot</button>
+      <p id="copy-status" class="status" role="status" aria-live="polite"></p>
+    </section>
+
+    <section aria-labelledby="results-heading">
+      <p class="eyebrow">2 · Inspect trade-offs</p>
+      <h2 id="results-heading">Path comparison</h2>
+      <div id="summary" class="summary" aria-live="polite"></div>
+      <div id="paths" class="path-grid"></div>
+    </section>
+
+    <section class="method" aria-labelledby="method-heading">
+      <p class="eyebrow">How to read it</p>
+      <h2 id="method-heading">Signals, not a mystery score</h2>
+      <p>The prototype reports step count and explicit friction categories. It does not collapse them into an opaque score or claim that fewer steps always means a better experience.</p>
+      <ul class="legend">
+        <li><span class="dot dot--helpful"></span> Helpful context</li>
+        <li><span class="dot dot--risk"></span> Review signal</li>
+        <li><span class="dot dot--neutral"></span> Neutral action</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>Designed and built by <strong>Soroush Etemadfar</strong>.</footer>
+  <script type="module" src="app.mjs"></script>
+</body>
+</html>
