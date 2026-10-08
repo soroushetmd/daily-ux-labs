@@ -1,0 +1,11 @@
+{
+  "disclaimer": "All listings and coordinates are synthetic.",
+  "listings": [
+    {"id":"cedar","name":"Cedar Corner","neighborhood":"Riverside","x":1.2,"y":1.1,"open_start":615,"open_end":735,"visit_minutes":30,"priority":88,"reasons":["within demo budget","two bedrooms","near transit"]},
+    {"id":"maple","name":"Maple Loft","neighborhood":"Market District","x":2.8,"y":1.0,"open_start":660,"open_end":810,"visit_minutes":35,"priority":82,"reasons":["workspace","walkable errands"]},
+    {"id":"park","name":"Parkside Flat","neighborhood":"West Garden","x":4.0,"y":2.7,"open_start":720,"open_end":885,"visit_minutes":30,"priority":92,"reasons":["two bedrooms","accessible entrance","quiet street"]},
+    {"id":"harbour","name":"Harbour Studio","neighborhood":"Quayside","x":1.5,"y":4.2,"open_start":630,"open_end":750,"visit_minutes":30,"priority":61,"reasons":["short commute","balcony"]},
+    {"id":"elm","name":"Elm Townhome","neighborhood":"North End","x":4.8,"y":4.6,"open_start":780,"open_end":900,"visit_minutes":40,"priority":86,"reasons":["extra room","outdoor space"]},
+    {"id":"king","name":"King Micro-Suite","neighborhood":"Central","x":2.0,"y":2.4,"open_start":600,"open_end":655,"visit_minutes":30,"priority":55,"reasons":["lowest demo price","central location"]}
+  ]
+}

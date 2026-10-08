@@ -1,0 +1,26 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Open House Route Planner</title><style>
+    :root{--ink:#17201b;--muted:#5e6861;--paper:#f3f0e7;--panel:#fffef9;--line:#d0d5ce;--accent:#17604a}*{box-sizing:border-box}
+    body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.55 system-ui,sans-serif}header,main,footer{width:min(1040px,calc(100% - 2rem));margin:auto}
+    header{padding:4rem 0 2rem;border-bottom:1px solid var(--line)}h1{margin:.2rem 0;font:800 clamp(2.7rem,8vw,5.8rem)/.92 Georgia,serif;letter-spacing:-.05em}
+    h2{margin-top:2.5rem}.eyebrow,.time{color:var(--accent);font-weight:800;text-transform:uppercase;letter-spacing:.08em;font-size:.78rem}.notice{padding:1rem;border-left:4px solid var(--accent);background:#e4e9df}
+    .summary{display:flex;gap:1rem;flex-wrap:wrap;margin:1.5rem 0}.metric,.stop{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:1rem}.metric strong{display:block;font-size:1.8rem}
+    .route{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:1rem}.stop h3{margin:.2rem 0}table{width:100%;border-collapse:collapse;background:var(--panel)}th,td{padding:.75rem;text-align:left;border:1px solid var(--line);vertical-align:top}caption{text-align:left;padding:.7rem 0;font-weight:700}footer{padding:3rem 0;color:var(--muted)}
+    @media(max-width:700px){table,thead,tbody,tr,th,td{display:block}thead{position:absolute;clip:rect(0 0 0 0)}tr{padding:.7rem;border-bottom:2px solid var(--line)}th,td{border:0;padding:.25rem .7rem}td:nth-child(2)::before{content:'Priority: ';font-weight:700}td:nth-child(3)::before{content:'Scheduled: ';font-weight:700}}
+    </style></head><body><header><p class="eyebrow">Synthetic real-estate UX prototype</p><h1>Open House Route Planner</h1>
+    <p>One explainable plan for a limited viewing day—without pretending that an algorithm knows the “best” home.</p><p class="notice"><strong>Demo only:</strong> Listings, coordinates, travel times, priorities, and preferences are fictional.</p></header>
+    <main><div class="summary"><div class="metric"><strong>5</strong>viewings</div><div class="metric"><strong>409</strong>combined priority</div><div class="metric"><strong>10:00 AM–3:00 PM</strong>available window</div></div>
+    <section aria-labelledby="route-title"><h2 id="route-title">Suggested itinerary</h2><div class="route"><article class="stop"><p class="time">10:15 AM–10:45 AM</p>
+        <h3>Cedar Corner</h3><p>Riverside · 12 min demo travel</p>
+        <p><strong>Priority 88/100:</strong> within demo budget; two bedrooms; near transit</p></article><article class="stop"><p class="time">11:00 AM–11:35 AM</p>
+        <h3>Maple Loft</h3><p>Market District · 12 min demo travel</p>
+        <p><strong>Priority 82/100:</strong> workspace; walkable errands</p></article><article class="stop"><p class="time">12:00 PM–12:30 PM</p>
+        <h3>Harbour Studio</h3><p>Quayside · 25 min demo travel</p>
+        <p><strong>Priority 61/100:</strong> short commute; balcony</p></article><article class="stop"><p class="time">12:51 PM–1:21 PM</p>
+        <h3>Parkside Flat</h3><p>West Garden · 21 min demo travel</p>
+        <p><strong>Priority 92/100:</strong> two bedrooms; accessible entrance; quiet street</p></article><article class="stop"><p class="time">1:36 PM–2:16 PM</p>
+        <h3>Elm Townhome</h3><p>North End · 15 min demo travel</p>
+        <p><strong>Priority 86/100:</strong> extra room; outdoor space</p></article></div></section>
+    <section aria-labelledby="why-title"><h2 id="why-title">Why each listing was or was not scheduled</h2><table><caption>Decision details for all synthetic listings</caption><thead><tr><th scope="col">Listing</th><th scope="col">Priority</th><th scope="col">Scheduled</th><th scope="col">Explanation</th></tr></thead><tbody><tr><th scope="row">Parkside Flat</th><td>92</td><td>Yes</td><td>Scheduled</td></tr><tr><th scope="row">Cedar Corner</th><td>88</td><td>Yes</td><td>Scheduled</td></tr><tr><th scope="row">Elm Townhome</th><td>86</td><td>Yes</td><td>Scheduled</td></tr><tr><th scope="row">Maple Loft</th><td>82</td><td>Yes</td><td>Scheduled</td></tr><tr><th scope="row">Harbour Studio</th><td>61</td><td>Yes</td><td>Scheduled</td></tr><tr><th scope="row">King Micro-Suite</th><td>55</td><td>No</td><td>Not selected because the chosen combination provides a stronger total priority fit within the time and travel constraints.</td></tr></tbody></table></section>
+    <section><h2>How to use this output</h2><p>Treat the itinerary as a planning draft. Confirm availability and real travel times, then change the input priorities when a preference is wrong. Priority is explicit input—not a prediction of property quality.</p></section></main>
+    <footer>Designed and built by <strong>Soroush Etemadfar</strong>.</footer></body></html>
