@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="A transparent game reward-choice prototype by Soroush Etemadfar.">
+  <title>Reward Choice Lab — Soroush Etemadfar</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#choices">Skip to reward choices</a>
+  <header>
+    <p class="eyebrow">Daily UX Lab · Ethical game monetization</p>
+    <div class="hero-grid">
+      <div>
+        <h1>Reward<br>Choice Lab</h1>
+        <p class="lede">Three visible paths to the same goal. Compare time, attention, and money before choosing.</p>
+      </div>
+      <aside class="wallet" aria-labelledby="wallet-title">
+        <p id="wallet-title" class="eyebrow">Demo wallet</p>
+        <p><strong id="crystals">40</strong> crystals</p>
+        <p><span id="ads-used">0</span>/2 rewarded ads used today</p>
+        <p><span id="spend">CAD $0.00</span> simulated spend</p>
+      </aside>
+    </div>
+    <p class="notice"><strong>Prototype only:</strong> No ad, purchase, account, or real currency is used. All values are synthetic.</p>
+  </header>
+
+  <main>
+    <section id="choices" aria-labelledby="choices-title">
+      <p class="eyebrow">Choose with context</p>
+      <h2 id="choices-title">How would you earn the next upgrade?</h2>
+      <p>All options remain visible. The free gameplay path is never hidden behind the monetized choices.</p>
+      <div id="option-grid" class="option-grid"></div>
+      <p id="status" class="status" role="status" aria-live="polite">No option selected yet.</p>
+    </section>
+
+    <section class="principles" aria-labelledby="principles-title">
+      <p class="eyebrow">Design guardrails</p>
+      <h2 id="principles-title">What this prototype refuses to do</h2>
+      <ul>
+        <li><strong>No fake urgency:</strong> there is no countdown or invented scarcity.</li>
+        <li><strong>No punishment for declining:</strong> “Not now” never removes gameplay access.</li>
+        <li><strong>No hidden exchange:</strong> time, ads, price, and reward are shown together.</li>
+        <li><strong>No unlimited ad loop:</strong> the demo caps rewarded ads at two per day.</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>Designed and built by <strong>Soroush Etemadfar</strong>.</footer>
+  <script type="module" src="app.mjs"></script>
+</body>
+</html>

@@ -8,6 +8,7 @@ Each project starts with a focused user problem and includes a working prototype
 
 | Date | Project | Focus | Stack |
 | --- | --- | --- | --- |
+| 2026-10-10 | [Reward Choice Lab](projects/2026-10-10-reward-choice-lab/) | Game UX · transparent monetization choices | HTML · CSS · JavaScript · Node tests |
 | 2026-10-08 | [Open House Route Planner](projects/2026-10-08-open-house-route-planner/) | Real-estate UX · explainable planning | Python · JSON · HTML |
 | 2026-10-06 | [Exit Path Mapper](projects/2026-10-06-exit-path-mapper/) | Subscription UX · cancellation transparency | HTML · CSS · JavaScript · Node tests |
 | 2026-10-04 | [Handoff Coverage Matrix](projects/2026-10-04-handoff-coverage-matrix/) | Design–engineering handoff · state coverage | Python · SQLite · SQL · HTML |
