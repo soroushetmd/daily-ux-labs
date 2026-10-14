@@ -1,0 +1,1 @@
+{"name":"journey-graph-auditor","version":"1.0.0","private":true,"type":"module","scripts":{"test":"node --test","report":"node cli.mjs sample-journey.json sample-report.html"},"engines":{"node":">=20"}}

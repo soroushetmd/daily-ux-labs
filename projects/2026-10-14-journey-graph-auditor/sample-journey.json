@@ -1,0 +1,15 @@
+{
+  "name": "Benefits application demo",
+  "start": "welcome",
+  "states": [
+    {"id":"welcome","label":"Welcome","kind":"screen","transitions":[{"to":"eligibility","action":"Start application"}]},
+    {"id":"eligibility","label":"Eligibility questions","kind":"screen","transitions":[{"to":"documents","action":"Eligible"},{"to":"not-eligible","action":"Not eligible"},{"to":"eligibility-error","action":"Service error"}]},
+    {"id":"eligibility-error","label":"Eligibility service unavailable","kind":"error","transitions":[{"to":"support","action":"Contact support"}]},
+    {"id":"documents","label":"Upload documents","kind":"screen","transitions":[{"to":"review","action":"Continue"}]},
+    {"id":"review","label":"Review application","kind":"screen","transitions":[{"to":"submitted","action":"Submit"},{"to":"documents","action":"Edit documents"}]},
+    {"id":"submitted","label":"Application submitted","kind":"success","terminal":true,"transitions":[]},
+    {"id":"not-eligible","label":"Not eligible","kind":"end","terminal":true,"transitions":[]},
+    {"id":"support","label":"Support information","kind":"screen","transitions":[]},
+    {"id":"legacy-confirmation","label":"Legacy confirmation","kind":"screen","terminal":true,"transitions":[]}
+  ]
+}

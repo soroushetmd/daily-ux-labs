@@ -1,0 +1,1 @@
+{"name":"Healthy demo","start":"start","states":[{"id":"start","label":"Start","kind":"screen","transitions":[{"to":"problem","action":"Fail"},{"to":"done","action":"Finish"}]},{"id":"problem","label":"Problem","kind":"error","transitions":[{"to":"start","action":"Try again"}]},{"id":"done","label":"Done","kind":"success","terminal":true,"transitions":[]}]}
