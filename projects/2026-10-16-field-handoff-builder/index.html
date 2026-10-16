@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Field Handoff Builder</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#builder">Skip to builder</a>
+  <header class="site-header">
+    <p class="eyebrow">Field operations · design–engineering handoff</p>
+    <h1>Turn an observation into a handoff.</h1>
+    <p class="lede">Structure hardware inspection notes so Engineering, Quality, and the next technician can see the evidence, work status, and next action—without collecting personal data.</p>
+  </header>
+  <main id="builder">
+    <section class="notice" aria-labelledby="scope-title">
+      <h2 id="scope-title">Prototype scope</h2>
+      <p>This synthetic demo organizes communication only. It does not diagnose equipment, authorize work, replace an approved procedure, or handle confidential operational data.</p>
+    </section>
+    <div class="workspace">
+      <form id="handoff-form" novalidate>
+        <div class="section-heading"><span>01</span><div><h2>Identify the item</h2><p>Use an equipment reference, not a person's name.</p></div></div>
+        <label for="asset">Component or asset <span aria-hidden="true">*</span></label>
+        <input id="asset" name="asset" required value="Door sensor DS-14" aria-describedby="asset-error">
+        <p class="error" id="asset-error"></p>
+        <label for="location">Location <span class="optional">Optional</span></label>
+        <input id="location" name="location" value="Car 3 · left side" placeholder="Area, unit, or station">
+
+        <div class="section-heading"><span>02</span><div><h2>Record the evidence</h2><p>Describe what you observed, not an unverified cause.</p></div></div>
+        <label for="observation">Observation <span aria-hidden="true">*</span></label>
+        <textarea id="observation" name="observation" rows="5" maxlength="800" required aria-describedby="count observation-error">Connector does not seat fully; locking tab stops before the final position.</textarea>
+        <div class="field-meta"><span id="count">0 / 800</span><span class="error" id="observation-error"></span></div>
+        <fieldset>
+          <legend>Checks completed</legend>
+          <label class="check"><input type="checkbox" name="checks" value="Visual inspection" checked> Visual inspection</label>
+          <label class="check"><input type="checkbox" name="checks" value="Connector alignment" checked> Connector alignment</label>
+          <label class="check"><input type="checkbox" name="checks" value="Wiring continuity"> Wiring continuity</label>
+          <label class="check"><input type="checkbox" name="checks" value="Corrective-action verification"> Corrective-action verification</label>
+        </fieldset>
+
+        <div class="section-heading"><span>03</span><div><h2>Make the state explicit</h2><p>Do not hide a safety concern inside free text.</p></div></div>
+        <fieldset class="status-grid" aria-describedby="status-error">
+          <legend>Status <span aria-hidden="true">*</span></legend>
+          <label><input type="radio" name="status" value="monitor"> <strong>Monitor</strong><span>Work can continue under procedure.</span></label>
+          <label><input type="radio" name="status" value="blocked" checked> <strong>Work blocked</strong><span>Review is required before continuing.</span></label>
+          <label><input type="radio" name="status" value="safety"> <strong>Safety concern</strong><span>Stop and follow escalation procedure.</span></label>
+        </fieldset>
+        <p class="error" id="status-error"></p>
+        <label for="next-action">Next safe action or owner</label>
+        <textarea id="next-action" name="nextAction" rows="3" aria-describedby="next-action-error">Quality review before energizing; verify connector part number and alignment.</textarea>
+        <p class="error" id="next-action-error"></p>
+        <button type="submit">Build handoff</button>
+      </form>
+
+      <aside aria-labelledby="preview-title">
+        <div class="preview-heading"><div><p class="eyebrow">Live output</p><h2 id="preview-title">Handoff preview</h2></div><button class="secondary" id="copy-json" type="button" disabled>Copy JSON</button></div>
+        <div id="preview" aria-live="polite"><p class="empty">Complete the required fields to build a structured handoff.</p></div>
+        <p id="copy-status" class="sr-only" aria-live="polite"></p>
+      </aside>
+    </div>
+  </main>
+  <footer>Designed and built by <strong>Soroush Etemadfar</strong>. All example equipment and observations are synthetic.</footer>
+  <script type="module" src="app.mjs"></script>
+</body>
+</html>
