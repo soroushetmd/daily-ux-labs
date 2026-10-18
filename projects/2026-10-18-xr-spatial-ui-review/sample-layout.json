@@ -1,0 +1,9 @@
+{
+  "name": "Museum guide XR controls",
+  "panels": [
+    {"id":"primary","label":"Primary controls","distance_m":1.2,"yaw_deg":0,"pitch_deg":-8,"width_m":0.65,"target_height_m":0.035},
+    {"id":"details","label":"Artifact details","distance_m":1.8,"yaw_deg":28,"pitch_deg":4,"width_m":1.1,"target_height_m":0.045},
+    {"id":"help","label":"Help and exit","distance_m":1.4,"yaw_deg":48,"pitch_deg":10,"width_m":0.5,"target_height_m":0.035},
+    {"id":"captions","label":"Captions","distance_m":0.5,"yaw_deg":0,"pitch_deg":-30,"width_m":0.9,"target_height_m":0.018}
+  ]
+}

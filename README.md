@@ -8,6 +8,7 @@ Each project starts with a focused user problem and includes a working prototype
 
 | Date | Project | Focus | Stack |
 | --- | --- | --- | --- |
+| 2026-10-18 | [XR Spatial UI Review](projects/2026-10-18-xr-spatial-ui-review/) | XR/VR UX · spatial layout visualization | Python · JSON · SVG · HTML |
 | 2026-10-16 | [Field Handoff Builder](projects/2026-10-16-field-handoff-builder/) | Field-service UX · structured technical handoff | HTML · CSS · JavaScript · Node tests |
 | 2026-10-14 | [Journey Graph Auditor](projects/2026-10-14-journey-graph-auditor/) | UX flows · design–engineering handoff | Node.js · JSON · graph traversal · HTML |
 | 2026-10-12 | [Plain Language Signals](projects/2026-10-12-plain-language-signals/) | Public-service content design · explainable linting | C11 · HTML · text processing |
