@@ -1,0 +1,8 @@
+id,time,channel,priority,title
+n1,08:42,Calendar,standard,Design critique begins in 20 minutes
+n2,09:18,Team chat,standard,New comments on prototype
+n3,09:37,System,urgent,Account security confirmation needed
+n4,10:05,Research repository,low,Three transcripts finished processing
+n5,11:20,Issue tracker,standard,Developer requested empty-state copy
+n6,13:10,Team chat,standard,Accessibility review is ready
+n7,17:05,Product updates,low,Weekly release summary
