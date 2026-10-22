@@ -1,0 +1,8 @@
+{
+  "version": "1.4.0",
+  "components": [
+    {"name":"Button","props":{"variant":{"type":"primary | secondary","required":false},"onPress":{"type":"() => void","required":true}},"keyboard":["Enter activates","Space activates"]},
+    {"name":"Dialog","props":{"title":{"type":"string","required":true},"onClose":{"type":"() => void","required":true}},"keyboard":["Escape closes","Tab cycles within dialog"]},
+    {"name":"Badge","props":{"tone":{"type":"neutral | success | warning","required":false}},"keyboard":[]}
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "version": "2.0.0",
+  "components": [
+    {"name":"Button","props":{"variant":{"type":"primary | secondary | danger","required":false},"onPress":{"type":"(event) => void","required":true},"loading":{"type":"boolean","required":false}},"keyboard":["Enter activates","Space activates"]},
+    {"name":"Dialog","props":{"title":{"type":"string","required":true},"onClose":{"type":"() => void","required":true},"initialFocus":{"type":"string","required":true}},"keyboard":["Tab cycles within dialog"]},
+    {"name":"Tooltip","props":{"content":{"type":"string","required":true}},"keyboard":["Escape dismisses"]}
+  ]
+}

@@ -8,6 +8,7 @@ Each project starts with a focused user problem and includes a working prototype
 
 | Date | Project | Focus | Stack |
 | --- | --- | --- | --- |
+| 2026-10-22 | [Component Contract Drift](projects/2026-10-22-component-contract-drift/) | Design systems · component API governance | Python · JSON · HTML |
 | 2026-10-20 | [Notification Rhythm Lab](projects/2026-10-20-notification-rhythm-lab/) | HCI · transparent notification batching | C++17 · CSV · HTML |
 | 2026-10-18 | [XR Spatial UI Review](projects/2026-10-18-xr-spatial-ui-review/) | XR/VR UX · spatial layout visualization | Python · JSON · SVG · HTML |
 | 2026-10-16 | [Field Handoff Builder](projects/2026-10-16-field-handoff-builder/) | Field-service UX · structured technical handoff | HTML · CSS · JavaScript · Node tests |

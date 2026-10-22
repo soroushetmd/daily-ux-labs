@@ -1,0 +1,60 @@
+{
+  "from": "1.4.0",
+  "to": "2.0.0",
+  "summary": {
+    "breaking": 4,
+    "review": 1,
+    "non-breaking": 2
+  },
+  "changes": [
+    {
+      "severity": "breaking",
+      "component": "Badge",
+      "contract": "Component",
+      "evidence": "Component was removed.",
+      "action": "Publish a migration path or restore the export."
+    },
+    {
+      "severity": "breaking",
+      "component": "Button",
+      "contract": "Prop: onPress",
+      "evidence": "Type changed from () => void to (event) => void.",
+      "action": "Support both forms temporarily or publish a migration."
+    },
+    {
+      "severity": "breaking",
+      "component": "Button",
+      "contract": "Prop: variant",
+      "evidence": "Type changed from primary | secondary to primary | secondary | danger.",
+      "action": "Support both forms temporarily or publish a migration."
+    },
+    {
+      "severity": "breaking",
+      "component": "Dialog",
+      "contract": "Prop: initialFocus",
+      "evidence": "New prop is required.",
+      "action": "Provide a default or migration guidance."
+    },
+    {
+      "severity": "review",
+      "component": "Dialog",
+      "contract": "Keyboard contract",
+      "evidence": "Removed interaction: Escape closes",
+      "action": "Verify the interaction remains reachable and document the replacement."
+    },
+    {
+      "severity": "non-breaking",
+      "component": "Button",
+      "contract": "Prop: loading",
+      "evidence": "New prop is optional.",
+      "action": "Document the optional capability."
+    },
+    {
+      "severity": "non-breaking",
+      "component": "Tooltip",
+      "contract": "Component",
+      "evidence": "Component was added.",
+      "action": "Document availability and intended use."
+    }
+  ]
+}

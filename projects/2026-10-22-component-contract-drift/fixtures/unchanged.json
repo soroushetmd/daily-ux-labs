@@ -1,0 +1,1 @@
+{"version":"1.4.0","components":[{"name":"Button","props":{"label":{"type":"string","required":true}},"keyboard":["Enter activates"]}]}
