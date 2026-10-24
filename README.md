@@ -8,6 +8,7 @@ Each project starts with a focused user problem and includes a working prototype
 
 | Date | Project | Focus | Stack |
 | --- | --- | --- | --- |
+| 2026-10-24 | [Rental Decision Receipt](projects/2026-10-24-rental-decision-receipt/) | Marketplace UX · transparent rental comparison | HTML · CSS · JavaScript · Node tests |
 | 2026-10-22 | [Component Contract Drift](projects/2026-10-22-component-contract-drift/) | Design systems · component API governance | Python · JSON · HTML |
 | 2026-10-20 | [Notification Rhythm Lab](projects/2026-10-20-notification-rhythm-lab/) | HCI · transparent notification batching | C++17 · CSV · HTML |
 | 2026-10-18 | [XR Spatial UI Review](projects/2026-10-18-xr-spatial-ui-review/) | XR/VR UX · spatial layout visualization | Python · JSON · SVG · HTML |

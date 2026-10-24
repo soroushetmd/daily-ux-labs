@@ -1,0 +1,14 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Rental Decision Receipt</title><link rel="stylesheet" href="styles.css"></head>
+<body>
+  <a class="skip" href="#comparison">Skip to comparison</a>
+  <header><div class="shell"><p class="eyebrow">Marketplace UX experiment · synthetic data</p><h1>Compare the cost.<br><em>Inspect the claim.</em></h1><p class="lede">A rental shortlist that keeps monthly cost, move-in cash, and listing evidence separate—so a lower headline price does not end the conversation.</p></div></header>
+  <main class="shell" id="comparison">
+    <section class="panel selector" aria-labelledby="select-title"><div><p class="step">01</p><h2 id="select-title">Build a shortlist</h2><p>Choose at least two fictional listings.</p></div><form id="listing-form"><fieldset><legend class="sr-only">Listings to compare</legend><div id="choices"></div></fieldset></form></section>
+    <section aria-labelledby="result-title"><div class="section-head"><div><p class="step">02</p><h2 id="result-title">Decision receipt</h2></div><button id="download" type="button">Download JSON receipt</button></div><p id="status" class="status" role="status" aria-live="polite"></p><div id="results" class="results"></div></section>
+    <aside class="note"><strong>Prototype boundary</strong><p>All listings and amounts are fictional. “Documented” only describes the supplied sample source; it is not a guarantee. Confirm lease terms, availability, legal requirements, and property condition independently.</p></aside>
+  </main>
+  <footer class="shell">Created by <strong>Soroush Etemadfar</strong> · UX/Product Design × Software Engineering</footer>
+  <script type="module" src="app.mjs"></script>
+</body></html>
