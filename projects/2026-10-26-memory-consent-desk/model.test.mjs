@@ -1,0 +1,7 @@
+import test from"node:test";import assert from"node:assert/strict";import{PROPOSALS,createReview,decide,summary,consentReceipt}from"./model.mjs";
+test("starts every proposal pending",()=>assert.deepEqual(summary(createReview()),{pending:3,approved:0,rejected:0}));
+test("approval records an explicit retention period",()=>{const items=decide(createReview(),"language","approved","30-days");assert.equal(items[0].status,"approved");assert.equal(items[0].duration,"30-days")});
+test("rejection clears retention",()=>{const items=decide(createReview(),"location","rejected","indefinite");assert.equal(items[1].duration,null);assert.equal(items[1].status,"rejected")});
+test("unknown decisions and durations are rejected",()=>{assert.throws(()=>decide(createReview(),"language","maybe","session"),/Unknown/);assert.throws(()=>decide(createReview(),"language","approved","forever"),/valid duration/)});
+test("receipt requires every proposal to be reviewed",()=>assert.throws(()=>consentReceipt(createReview()),/Review every proposal/));
+test("receipt preserves purpose and a readable duration",()=>{let items=createReview(PROPOSALS);for(const item of items)items=decide(items,item.id,item.id==="health"?"rejected":"approved",item.defaultDuration);const receipt=consentReceipt(items,"2026-10-26T13:00:00.000Z");assert.equal(receipt.decisions.length,3);assert.equal(receipt.decisions[0].durationLabel,"30 days");assert.equal(receipt.decisions[2].durationLabel,null);assert.match(receipt.decisions[0].purpose,/clearer language/)});
