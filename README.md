@@ -8,6 +8,7 @@ Each project starts with a focused user problem and includes a working prototype
 
 | Date | Project | Focus | Stack |
 | --- | --- | --- | --- |
+| 2026-10-28 | [Interaction Latency Budget](projects/2026-10-28-interaction-latency-budget/) | HCI · explainable interaction performance | C++17 · CSV · HTML |
 | 2026-10-26 | [Memory Consent Desk](projects/2026-10-26-memory-consent-desk/) | Human–AI interaction · controllable memory | HTML · CSS · JavaScript · Node tests |
 | 2026-10-24 | [Rental Decision Receipt](projects/2026-10-24-rental-decision-receipt/) | Marketplace UX · transparent rental comparison | HTML · CSS · JavaScript · Node tests |
 | 2026-10-22 | [Component Contract Drift](projects/2026-10-22-component-contract-drift/) | Design systems · component API governance | Python · JSON · HTML |

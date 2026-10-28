@@ -1,0 +1,11 @@
+trace_id,flow,feedback_ms,ready_ms
+s01,Search results,72,680
+s02,Search results,95,920
+s03,Search results,190,1420
+s04,Search results,110,870
+f01,Apply filters,84,540
+f02,Apply filters,165,810
+f03,Apply filters,92,610
+d01,Open record,120,980
+d02,Open record,148,1170
+d03,Open record,240,1680
