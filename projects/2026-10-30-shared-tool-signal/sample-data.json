@@ -1,0 +1,17 @@
+{
+  "notice": "Fictional demo inventory and events; not factory or employee data.",
+  "tools": [
+    {"id":"T-104","name":"Digital torque wrench","category":"Torque","home_zone":"Calibration cabinet"},
+    {"id":"T-208","name":"Connector crimp tool","category":"Electrical","home_zone":"Electrical bench"},
+    {"id":"T-315","name":"Inspection mirror","category":"Inspection","home_zone":"Inspection cart"},
+    {"id":"T-422","name":"Cable puller","category":"Installation","home_zone":"Tool crib A"},
+    {"id":"T-509","name":"Multimeter","category":"Electrical","home_zone":"Electrical bench"}
+  ],
+  "events": [
+    {"tool_id":"T-104","event_type":"return","observed_zone":"Calibration cabinet","occurred_at":"2026-10-30T11:40:00Z"},
+    {"tool_id":"T-208","event_type":"checkout","observed_zone":"Bay 2 cart","occurred_at":"2026-10-30T10:10:00Z","expected_return":"2026-10-30T18:00:00Z"},
+    {"tool_id":"T-315","event_type":"return","observed_zone":"Bay 4 shelf","occurred_at":"2026-10-30T09:20:00Z"},
+    {"tool_id":"T-422","event_type":"checkout","observed_zone":"Bay 1 cart","occurred_at":"2026-10-29T18:00:00Z","expected_return":"2026-10-30T08:00:00Z"},
+    {"tool_id":"T-509","event_type":"missing","observed_zone":null,"occurred_at":"2026-10-30T07:45:00Z"}
+  ]
+}
