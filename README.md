@@ -8,6 +8,7 @@ Each project starts with a focused user problem and includes a working prototype
 
 | Date | Project | Focus | Stack |
 | --- | --- | --- | --- |
+| 2026-11-01 | [Input Access Mapper](projects/2026-11-01-input-access-mapper/) | Game UX · accessible control auditing | HTML · CSS · JavaScript · Node tests |
 | 2026-10-30 | [Shared Tool Signal](projects/2026-10-30-shared-tool-signal/) | Field-service UX · explainable tool availability | Python · SQLite · JSON · HTML |
 | 2026-10-28 | [Interaction Latency Budget](projects/2026-10-28-interaction-latency-budget/) | HCI · explainable interaction performance | C++17 · CSV · HTML |
 | 2026-10-26 | [Memory Consent Desk](projects/2026-10-26-memory-consent-desk/) | Human–AI interaction · controllable memory | HTML · CSS · JavaScript · Node tests |
