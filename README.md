@@ -8,6 +8,7 @@ Each project starts with a focused user problem and includes a working prototype
 
 | Date | Project | Focus | Stack |
 | --- | --- | --- | --- |
+| 2026-11-05 | [Focus Flow Contract](projects/2026-11-05-focus-flow-contract/) | Accessibility engineering · focus handoff contracts | TypeScript · Node.js · JSON · HTML |
 | 2026-11-03 | [Deadline Clarity Map](projects/2026-11-03-deadline-clarity-map/) | Public-service UX · transparent deadline visualization | C11 · CSV · HTML |
 | 2026-11-01 | [Input Access Mapper](projects/2026-11-01-input-access-mapper/) | Game UX · accessible control auditing | HTML · CSS · JavaScript · Node tests |
 | 2026-10-30 | [Shared Tool Signal](projects/2026-10-30-shared-tool-signal/) | Field-service UX · explainable tool availability | Python · SQLite · JSON · HTML |

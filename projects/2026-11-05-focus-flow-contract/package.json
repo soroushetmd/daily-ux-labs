@@ -1,0 +1,11 @@
+{
+  "name": "focus-flow-contract",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "engines": { "node": ">=22.18" },
+  "scripts": {
+    "test": "node --test test_focus_flow.ts",
+    "sample": "node focus_flow.ts sample-flow.json sample-report.html"
+  }
+}

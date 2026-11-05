@@ -1,0 +1,9 @@
+{
+  "title": "Broken checkout modal",
+  "elements": [
+    { "id": "pay", "role": "button", "label": "Pay now", "region": "page", "order": 1 },
+    { "id": "confirm", "role": "button", "label": "", "region": "checkout-dialog", "order": 1 },
+    { "id": "hidden-help", "role": "link", "label": "Help", "region": "page", "order": 3, "hidden": true }
+  ],
+  "modal": { "id": "checkout-dialog", "open": true, "initialFocus": "missing", "returnFocus": "pay" }
+}

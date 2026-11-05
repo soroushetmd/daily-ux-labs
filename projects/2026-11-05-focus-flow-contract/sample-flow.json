@@ -1,0 +1,13 @@
+{
+  "title": "Delete workspace confirmation",
+  "elements": [
+    { "id": "skip", "role": "skip-link", "label": "Skip to workspace settings", "region": "page", "order": 1, "target": "main", "inert": true },
+    { "id": "main", "role": "region", "label": "Workspace settings", "region": "page", "inert": true },
+    { "id": "workspace-name", "role": "textbox", "label": "Workspace name", "region": "page", "order": 2, "inert": true },
+    { "id": "delete-workspace", "role": "button", "label": "Delete workspace", "region": "page", "order": 3, "inert": true },
+    { "id": "dialog-title", "role": "heading", "label": "Confirm deletion", "region": "delete-dialog" },
+    { "id": "cancel", "role": "button", "label": "Cancel", "region": "delete-dialog", "order": 4 },
+    { "id": "confirm-delete", "role": "button", "label": "Delete permanently", "region": "delete-dialog", "order": 5 }
+  ],
+  "modal": { "id": "delete-dialog", "open": true, "initialFocus": "cancel", "returnFocus": "delete-workspace" }
+}
